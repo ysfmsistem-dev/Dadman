@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>دادمان | دستیار حقوقی هوشمند</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="app">
+    <aside class="sidebar">
+      <div class="brand"><div class="logo">د</div><div><strong>دادمان</strong><small>دستیار حقوقی هوشمند</small></div></div>
+      <button class="new-chat" id="newChat">＋ گفت‌وگوی جدید</button>
+      <div class="side-note">نسخه آزمایشی</div>
+      <div class="side-bottom">پاسخ‌های حقوقی را پیش از اقدام، با منبع رسمی تطبیق دهید.</div>
+    </aside>
+    <section class="main">
+      <header><span>گفت‌وگوی حقوقی</span><span class="status"><i></i> آنلاین</span></header>
+      <div class="messages" id="messages">
+        <div class="welcome" id="welcome"><div class="welcome-mark">د</div><h1>سلام، به دادمان خوش آمدید</h1><p>پرسش حقوقی خود را مطرح کنید تا گفت‌وگو را آغاز کنیم.</p>
+          <div class="suggestions">
+            <button data-prompt="شرایط مطالبه مهریه در قانون ایران چیست؟">شرایط مطالبه مهریه چیست؟</button>
+            <button data-prompt="برای تنظیم یک اظهارنامه حقوقی چه نکاتی مهم است؟">تنظیم اظهارنامه حقوقی</button>
+            <button data-prompt="تفاوت فسخ قرارداد و اقاله چیست؟">تفاوت فسخ و اقاله</button>
+          </div>
+        </div>
+      </div>
+      <form id="chatForm" class="composer">
+        <textarea id="prompt" rows="1" placeholder="سؤال حقوقی خود را بنویسید..." required></textarea>
+        <button id="send" type="submit" aria-label="ارسال">↑</button>
+      </form>
+      <p class="disclaimer">دادمان ابزار کمکی است؛ پاسخ‌ها جایگزین بررسی پرونده و مشاوره تخصصی نیستند.</p>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body></html>
